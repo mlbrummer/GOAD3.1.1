@@ -1,0 +1,154 @@
+/*
+ * Code written in this css document contains the global styling for GOAD
+ * @Author Mldubbelaar
+ */
+
+#crowbar-workspace, #svgdataurl, #pngdataurl, #downloadScatter{display: none;}
+
+.svgTitle {
+	font-size:18px;	
+}
+
+@media (max-width: 767px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+  
+  svg.tpmValsPlot > g > .legend {
+  	display:none;
+  }
+  
+  .computerContent,#DownloadTPMGraph,#DownloadQETable,#DEdownloadButtons{
+  	display:none;
+  }
+  .mobileContent {
+  	display:show;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-responsive {
+    font-size:100%;
+  }
+  
+   svg.tpmValsPlot > g > .legend {
+  	display:show;
+  }
+  
+  .computerContent,#DownloadTPMGraph,#DownloadQETable,#DEdownloadButtons {
+  	display:show;
+  }
+  .mobileContent {
+  	display:none;
+  }
+}
+
+text.label {
+	transform:translate(25,12.5) !important;
+}
+
+#goadImage{
+  float:left;
+}
+
+#umcgImage{
+  float:right;
+}
+
+#divEmptyButton{
+  width:5%;
+}
+
+.panel-title{
+  color:#000000;  
+}
+
+.btn-primary, .btn.disabled, .downloadButton{
+  border:0px;
+  background-color:#002080;
+  margin-bottom:5px;
+}
+
+.downloadButton{
+	 border:0px;
+  background-color:#002080;
+  margin-bottom:5px;
+  font-color:white;
+	
+}
+
+#publicationDiv, #dashboard, #TPMdiv{
+	overflow-x:auto;
+}
+
+#returnAccordion{
+  color:#002080 !important;
+  margin-bottom:5px;
+}
+
+#tutorialButton{
+  border:0px;
+  background-color:transparent;
+}
+
+#closeModal{
+  color:#ffffff !important; 
+}
+
+.modal-title{
+  background-color:#002080;
+  color:#ffffff;
+  padding:1em;
+}
+
+#publicationCard thead tr{
+  cursor:pointer;
+}
+
+#tutorialDEinfo, #tutorialQEinfo{
+  border:0px;
+  background-color:#002080;
+  margin-bottom:5px;
+  color:#ffffff;
+}
+
+#QETable, #searchBar_QE{
+  margin-bottom:5px;
+}
+
+#selectBar, #contactInfo, #selectBarMessage, #errorLengthForSubmit,
+#publicationPart, #refreshPublications, #QE_content, #searchQE, 
+#QE_table, #searchBar_DE, #genePart, #dashboard, #analysis_info, 
+#DownloadQE, #selectBarQE, #NoDEGMessage, #materialInfo, #hiddenQEtext, 
+#DownloadQETable{
+  display:none;
+  margin-bottom:1em;
+}
+
+#s2id_selectConditions, #informationStudy{
+  width:100% !important;
+  margin-bottom:1em !important;
+}
+
+.col-centered, #analysis_info{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tick, .legend {
+  font-size:12px;
+}
+
+#submitDEbutton{
+  align:center;
+}
+
+.table-scroll{
+  height:350px;
+  overflow:auto;
+}
