@@ -96,7 +96,7 @@ $(document).ready(function () {
 		// The table-scroll is emptied when clicking the DE submit button
 		// and the for-control is reset.
 		// The modal that holds the loading bar is hidden.
-		$('#loaderModal').modal('show');
+		$('#loaderModal').modal({backdrop: 'static', keyboard: false},'show');
 		$("#NoDEGMessage").hide();
 		$("#firstCondition").remove();
 		$(".table-scroll").empty();
@@ -144,7 +144,7 @@ $(document).ready(function () {
 							$('div[id^="htmlwidget"]').remove()
 							// The column name which is used for the legend is replaced by 'p-value'.
 							$('text.color-legend-label').text('FDR P-value')
-							$("<div id='firstCondition' class='col-md-10 text-center DE text-center'><b>"+ firstCondition.replace(/-|_/g,' ') + "</b></div>").appendTo("#scatterplot")
+							$("<div id='firstCondition' class='col-md-10 text-center DE'><b>"+ firstCondition.replace(/-|_/g,' ') + "</b></div><div class='col-md-10 text-center DE'><small>Hover to obtain more information and zoom/drag to explore the genes</small></div>").appendTo("#scatterplot")
 							$("#DownloadScatterplot").show();
 							// The following attribute is changed for the loading bar shown during the analysis.
 							$("#progressLoading").attr('aria-valuenow', 100).css('width',"100%");
