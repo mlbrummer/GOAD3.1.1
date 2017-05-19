@@ -2,9 +2,10 @@
 	<div class="well">
 		<address>
 			<strong>University Medical Center Groningen<br></strong>
-			Department of Neuroscience, section Medical Physiology
+			Department of Neuroscience, section Medical Physiology <br/>
 			Antonius Deusinglaan 1<br/>
 			9713 AV Groningen <br/>
+			The Netherlands <br/>
 		</address>
 		<address>
 			<b>Contact: </b><br/>

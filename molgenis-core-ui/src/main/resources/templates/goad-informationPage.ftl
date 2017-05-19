@@ -10,6 +10,11 @@
 		In the end <a href="https://pypi.python.org/pypi/HTSeq">HTSeq</a> was used to obtain the counts for the datasets.
 		<br/>
 		<br/>
+		<h4>Analyses</h4>
+		The interactive analyses are done with the use of R. The filtering of low expression genes is done with the use of <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-15-92">DAFS: a data-adaptive flag method</a>.
+		<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/">EdgeR</a> is used in order to generate the differential expression lists and to obtain the quantitative gene information, and <a href="https://cran.r-project.org/web/packages/scatterD3/vignettes/introduction.html">scatterD3</a> was used to create the interactive volcano scatterplot.		
+		<br/>
+		<br/>
 		<h4>Visualization GOAD</h4>
 		
 		The set up of <a href="https://github.com/molgenis/molgenis">MOLGENIS</a> and several javascript packages where used in order to develop GOAD. 
