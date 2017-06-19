@@ -117,7 +117,7 @@ $(document).ready(function () {
 			var tableContent = [];
 			// The following attribute is changed for the loading bar shown during the analysis.
 			$("#progressLoading").attr('aria-valuenow', 10).css('width',"10%");
-			$.get("/api/v2/base_"+GEODOnPage[0].replace(/-/g,'')+"Targets?q=SRA=="+$("#selectConditions").val()[1]).done(
+			$.get("/api/v2/base_"+GEODOnPage[0].replace(/-/g,'')+"Targets?q=SRA=="+$("#selectConditions").val()[0]).done(
 					function(data){ 
 						var data = data["items"];
 						firstCondition = data[0]["Description"];
